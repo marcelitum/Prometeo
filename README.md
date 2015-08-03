@@ -1,4 +1,4 @@
-# Prometeo
+# Prometeo (en desarrollo)
 Montar unidades remotas en IPs dinámicos
 ----------------------------------------
 
