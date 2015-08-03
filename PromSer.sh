@@ -1,7 +1,7 @@
 #!/bin/bash
 # Obtener IP externa y enviarla por email
 
-usuario="Marcelo"
+usuario=$USER
 horario=$(date +"%Y-%m-%d-%H-%M-%S")
 
 declare -a arr=("ipecho.net/plain" "ident.me" "tnx.nl/ip" "ip.appspot.com" "https://shtuff.it/myip/short/" "whatismyip.akamai.com" "icanhazip.com" "wgetip.com" "ip.tyk.nu" "corz.org/ip" "bot.whatismyipaddress.com" "ipof.in/txt" "eth0.me/")
