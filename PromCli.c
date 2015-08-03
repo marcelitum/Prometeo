@@ -94,7 +94,7 @@ int main (int argc, char *argv[])
   system(cShell);
 
   #fusermount -u /mnt/interno
-  #sshfs marcelo@190.193.134.181:/media/interno /mnt/interno -C -p 9876  
+  #sshfs marcelo@xxx.xxx.xxx.xxx:/media/interno /mnt/interno -C -p 9876  
   
   return 0;
 }
