@@ -1,0 +1,142 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,104,63)
+  { TextBox1 TextBox
+    MoveScaled(22,20,17,4)
+    Text = ("marcelo")
+  }
+  { Label2 Label
+    MoveScaled(6,16,9,5)
+    Text = ("IP Server")
+  }
+  { TextBox2 TextBox
+    MoveScaled(1,20,18,4)
+    Text = ("192.168.111.222")
+  }
+  { Label3 Label
+    MoveScaled(42,16,6,5)
+    Text = ("Puerto")
+  }
+  { TextBox3 TextBox
+    MoveScaled(42,20,7,4)
+    Text = ("9876")
+  }
+  { TextBox5 TextBox
+    MoveScaled(31,7,18,4)
+    Text = ("*************")
+  }
+  { TextBox6 TextBox
+    MoveScaled(1,7,28,4)
+    Text = ("who@gmail.com")
+  }
+  { Label9 Label
+    MoveScaled(0,25,22,5)
+    Text = ("Recurso Samba remoto")
+  }
+  { Label10 Label
+    MoveScaled(9,3,15,5)
+    Text = ("Email recepcion")
+  }
+  { Label11 Label
+    MoveScaled(35,3,12,5)
+    Text = ("Passoword")
+  }
+  { Label14 Label
+    MoveScaled(12,29,24,5)
+    Text = ("Carpeta Local de montaje")
+  }
+  { Separator2 Separator
+    MoveScaled(50,2,4,59)
+  }
+  { Button4 Button
+    MoveScaled(1,12,48,4)
+    Text = ("Obtener datos SERVIDOR")
+  }
+  { Button7 Button
+    MoveScaled(1,57,48,4)
+    Text = ("Crear coneccion")
+  }
+  { ComboBox1 ComboBox
+    MoveScaled(23,25,26,4)
+    Text = ("ComboBox1")
+  }
+  { Label4 Label
+    MoveScaled(75,8,14,5)
+    Text = ("Usuario local")
+  }
+  { Label5 Label
+    MoveScaled(60,8,9,5)
+    Text = ("IP Publico")
+  }
+  { TextBox8 TextBox
+    MoveScaled(55,12,18,4)
+    Text = ("192.168.111.222")
+  }
+  { Label6 Label
+    MoveScaled(93,8,11,5)
+    Text = ("Puerto SSH")
+  }
+  { TextBox9 TextBox
+    MoveScaled(93,12,7,4)
+    Text = ("9876")
+  }
+  { CheckBox2 CheckBox
+    MoveScaled(56,0,14,5)
+    Text = ("Server")
+  }
+  { Label7 Label
+    MoveScaled(80,16,22,5)
+    Text = ("Recurso Samba LOCAL")
+  }
+  { Button1 Button
+    MoveScaled(55,5,48,4)
+    Text = ("Obtener datos")
+  }
+  { Button2 Button
+    MoveScaled(55,30,48,4)
+    Text = ("Agregar Cliente")
+  }
+  { ComboBox2 ComboBox
+    MoveScaled(80,20,23,4)
+    Text = ("ComboBox1")
+  }
+  { TextBox10 TextBox
+    MoveScaled(55,20,24,4)
+    Text = ("who@gmail.com")
+  }
+  { Label12 Label
+    MoveScaled(55,16,15,5)
+    Text = ("e-mail Cliente")
+  }
+  { GridView1 GridView
+    MoveScaled(55,36,48,25)
+  }
+  { Label8 Label
+    MoveScaled(55,25,23,5)
+    Text = ("Frecuancia Actualizacion")
+  }
+  { TextBox11 TextBox
+    MoveScaled(80,25,6,4)
+    Text = ("60")
+  }
+  { Label13 Label
+    MoveScaled(88,26,9,2)
+    Text = ("minutos")
+  }
+  { DirView1 DirView
+    MoveScaled(1,33,48,22)
+  }
+  { ComboBox3 ComboBox
+    MoveScaled(74,12,18,4)
+    Text = ("ComboBox3")
+  }
+  { CheckBox1 CheckBox
+    MoveScaled(1,0,14,5)
+    Text = ("Cliente")
+  }
+  { Label1 Label
+    MoveScaled(22,16,16,5)
+    Text = ("Usuario remoto")
+  }
+}
