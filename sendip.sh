@@ -1,11 +1,10 @@
 #!/bin/bash
 # Obtener IP externa y enviarla por email
-usuario="Marcelo"
+#usuario="Marcelo"
 horario=$(date +"%Y-%m-%d-%H-%M-%S")
-maquina=$HOSTNAME
-llavePrivada="abcdefghijklmnopqrstuvwxyz012345" # <-------- modificar
-
-emailInforme="xxxxxxx@somemail.com"
+#maquina=$HOSTNAME
+emailInforme="marcelo_f@hotmail.com"
+NombreHost="myippublico"
 
 declare -a arr=("ipecho.net/plain" "ident.me" "tnx.nl/ip" "ip.appspot.com" "https://shtuff.it/myip/short/" "whatismyip.akamai.com" "icanhazip.com" "wgetip.com" "ip.tyk.nu" "corz.org/ip" "bot.whatismyipaddress.com" "ipof.in/txt" "eth0.me/")
 IP=$(curl -s --retry 3 --retry-delay 10 ipecho.net/plain)
@@ -17,21 +16,11 @@ do
 done
 
 # Enviar el reporte por e-mail
-echo "$IP $usuario $horario $maquina " | mail -s "$maquina" $emailInforme
 
-# Obtener la temperatura del sensor temp1 en la linea 3
+temp2="NombreHost="$NombreHost"_WanIP="$IP"_Hora="$horario"_Maquina="$HOSTNAME
 
-temp=""
-sensors | while read line ; do
-   read line
-   read line
-   temp=$(echo $line | cut  -b 8-12)
-   #echo $temp
-   t1="temp:"$temp
+echo "$temp2 " | mail -s "$IP" $emailInforme
 
-   curl "https://emoncms.org/input/post.json?node=1&apikey="$llavePrivada"&json="$t1 > /dev/null
-   read line
-   read line
-done
+ttytter -status=$temp2
 
 exit 0
