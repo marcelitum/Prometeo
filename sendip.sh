@@ -1,8 +1,9 @@
 #!/bin/bash
 # Obtener IP externa y enviarla por email
-#usuario="Marcelo"
+usuario="Marcelo"
+usuarioTwitter="@AAnimalMan"
 horario=$(date +"%Y-%m-%d-%H-%M-%S")
-#maquina=$HOSTNAME
+maquina=$HOSTNAME
 emailInforme="marcelo_f@hotmail.com"
 NombreHost="myippublico"
 
@@ -16,11 +17,13 @@ do
 done
 
 # Enviar el reporte por e-mail
-
-temp2="NombreHost="$NombreHost"_WanIP="$IP"_Hora="$horario"_Maquina="$HOSTNAME
-
+temp2="NombreHost="$NombreHost"_WanIP="$IP"_Hora="$horario"_Maquina="$HOSTNAME"_#ipdinamico"
 echo "$temp2 " | mail -s "$IP" $emailInforme
 
-ttytter -status=$temp2
+echo "$IP $usuario $horario $maquina " | mail -s "$maquina titulo" marcelo_f@hotmail.com
+
+temp2=" /dm "$usuarioTwitter" NombreHost="$NombreHost"_WanIP="$IP"_Hora="$horario"_Maquina="$HOSTNAME"_#ipdinamico"
+
+echo $temp2 | ttytter -script
 
 exit 0
